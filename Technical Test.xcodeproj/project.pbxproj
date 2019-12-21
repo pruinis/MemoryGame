@@ -17,6 +17,11 @@
 		ABD797342293F3690000E3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD797332293F3690000E3AE /* Assets.xcassets */; };
 		ABD797372293F3690000E3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD797352293F3690000E3AE /* LaunchScreen.storyboard */; };
 		ABD7973A2293F3690000E3AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD797392293F3690000E3AE /* main.m */; };
+		D52D9D4D23AEDADD00F74F78 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D9D4C23AEDADD00F74F78 /* CardModel.m */; };
+		D52D9D5123AEE2AD00F74F78 /* GameDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D9D5023AEE2AD00F74F78 /* GameDirector.m */; };
+		D5CB60D823AEF99B00D327BE /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CB60D723AEF99B00D327BE /* CardCollectionViewCell.m */; };
+		D5CB60DE23B03BCF00D327BE /* PlayTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CB60DD23B03BCF00D327BE /* PlayTimeManager.m */; };
+		D5CB60E223B0E36400D327BE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CB60E123B0E36400D327BE /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,16 @@
 		ABD797362293F3690000E3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABD797382293F3690000E3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD797392293F3690000E3AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D52D9D4B23AEDADD00F74F78 /* CardModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardModel.h; sourceTree = "<group>"; };
+		D52D9D4C23AEDADD00F74F78 /* CardModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardModel.m; sourceTree = "<group>"; };
+		D52D9D4F23AEE2AD00F74F78 /* GameDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameDirector.h; sourceTree = "<group>"; };
+		D52D9D5023AEE2AD00F74F78 /* GameDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameDirector.m; sourceTree = "<group>"; };
+		D5CB60D623AEF99B00D327BE /* CardCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
+		D5CB60D723AEF99B00D327BE /* CardCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
+		D5CB60DC23B03BCF00D327BE /* PlayTimeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayTimeManager.h; sourceTree = "<group>"; };
+		D5CB60DD23B03BCF00D327BE /* PlayTimeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayTimeManager.m; sourceTree = "<group>"; };
+		D5CB60E023B0E36400D327BE /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D5CB60E123B0E36400D327BE /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,18 +112,60 @@
 			children = (
 				AB37C84A229550F300FC306C /* Resources */,
 				AB2129492294576B00E56A54 /* Generic Popup */,
+				D52D9D4A23AEDAB900F74F78 /* Model */,
+				D52D9D4E23AEE24200F74F78 /* Class */,
+				D5CB60D523AEF96900D327BE /* Cell */,
+				D5CB60DF23B0E34000D327BE /* ViewController */,
 				ABD7972A2293F3680000E3AE /* AppDelegate.h */,
 				ABD7972B2293F3680000E3AE /* AppDelegate.m */,
-				ABD7972D2293F3680000E3AE /* ViewController.h */,
-				ABD7972E2293F3680000E3AE /* ViewController.m */,
-				AB37C847229540B600FC306C /* GlobalFunctions.h */,
-				AB37C848229540B600FC306C /* GlobalFunctions.m */,
 				ABD797302293F3680000E3AE /* Main.storyboard */,
 				ABD797352293F3690000E3AE /* LaunchScreen.storyboard */,
 				ABD797382293F3690000E3AE /* Info.plist */,
 				ABD797392293F3690000E3AE /* main.m */,
 			);
 			path = "Technical Test";
+			sourceTree = "<group>";
+		};
+		D52D9D4A23AEDAB900F74F78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D52D9D4B23AEDADD00F74F78 /* CardModel.h */,
+				D52D9D4C23AEDADD00F74F78 /* CardModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D52D9D4E23AEE24200F74F78 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D52D9D4F23AEE2AD00F74F78 /* GameDirector.h */,
+				D52D9D5023AEE2AD00F74F78 /* GameDirector.m */,
+				D5CB60DC23B03BCF00D327BE /* PlayTimeManager.h */,
+				D5CB60DD23B03BCF00D327BE /* PlayTimeManager.m */,
+				AB37C847229540B600FC306C /* GlobalFunctions.h */,
+				AB37C848229540B600FC306C /* GlobalFunctions.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D5CB60D523AEF96900D327BE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D5CB60D623AEF99B00D327BE /* CardCollectionViewCell.h */,
+				D5CB60D723AEF99B00D327BE /* CardCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D5CB60DF23B0E34000D327BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABD7972D2293F3680000E3AE /* ViewController.h */,
+				ABD7972E2293F3680000E3AE /* ViewController.m */,
+				D5CB60E023B0E36400D327BE /* SettingsViewController.h */,
+				D5CB60E123B0E36400D327BE /* SettingsViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52D9D5123AEE2AD00F74F78 /* GameDirector.m in Sources */,
 				ABD7972F2293F3680000E3AE /* ViewController.m in Sources */,
+				D52D9D4D23AEDADD00F74F78 /* CardModel.m in Sources */,
 				ABD7973A2293F3690000E3AE /* main.m in Sources */,
+				D5CB60DE23B03BCF00D327BE /* PlayTimeManager.m in Sources */,
+				D5CB60D823AEF99B00D327BE /* CardCollectionViewCell.m in Sources */,
 				AB21294C2294577700E56A54 /* GenericPopUp.m in Sources */,
+				D5CB60E223B0E36400D327BE /* SettingsViewController.m in Sources */,
 				ABD7972C2293F3680000E3AE /* AppDelegate.m in Sources */,
 				AB37C849229540B600FC306C /* GlobalFunctions.m in Sources */,
 			);
