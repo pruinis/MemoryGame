@@ -47,6 +47,15 @@ NSString *const showSettingsSegue = @"showSettingsSegue";
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.undoButton.hidden = self.director.undoButtonIsHidden;
+    
+    if (self.director) {
+        [self.director resume];
+    }
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.director pause];
 }
 
 -(void)setupCollectionView {
