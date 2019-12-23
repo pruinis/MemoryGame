@@ -102,7 +102,7 @@
         for (CardModel *card in last) {
             // do stuff...
             card.isFlipped = NO;
-            card.isLocked = YES;
+            card.isLocked = NO;
             
             [UIView animateWithDuration:0.8 animations:^{
                 [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:card.cell.contentView cache:YES];
